@@ -5,7 +5,7 @@ pipeline {
       agent any
       steps {
         echo 'JENKINS WORKS'
-        sh 'sh -c "pip install docker-compose"'
+        sh 'sh -c "python --version"'
       }
     }
 
