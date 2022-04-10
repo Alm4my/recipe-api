@@ -5,7 +5,8 @@ pipeline {
       agent any
       steps {
         echo 'JENKINS WORKS'
-        sh 'docker --version'
+        sh '''#!/bin/bash
+python --version'''
       }
     }
 
