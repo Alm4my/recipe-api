@@ -2,7 +2,12 @@ pipeline {
   agent any
   stages {
     stage('Build') {
-      agent any
+      agent {
+        dockerfile {
+          filename 'Dockerfile'
+        }
+
+      }
       steps {
         echo 'JENKINS WORKS'
         sh '''#!/bin/bash
